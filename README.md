@@ -1,3 +1,12 @@
+# GeoJSON Graph Demo
+
+This is a demonstration of how to:
+
+- Connect with the [Geo Web Subgraph](https://thegraph.com/explorer/subgraph/geo-web-project/geo-web-subgraph) to query claimed parcels
+- Use `js-geo-web-coordinate` to create a grid
+
+Performance and state management is not optimal here and needs a lot of work before going to production.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
