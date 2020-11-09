@@ -2707,7 +2707,7 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.4.0:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
   integrity sha512-E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==
 
-bn.js@^5.1.1:
+bn.js@^5.1.1, bn.js@^5.1.3:
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.1.3.tgz#beca005408f642ebebea80b042b4d18d2ac0ee6b"
   integrity sha512-GkTiFpjFtUzU9CbMeJ5iazkCzGL3jrhzerzZIuqLABjbwRaFt33I9tUdSNryIptM+RxDet6OKm2WnLXzW51KsQ==
@@ -6695,6 +6695,13 @@ jest@26.6.0:
     "@jest/core" "^26.6.0"
     import-local "^3.0.2"
     jest-cli "^26.6.0"
+
+js-geo-web-coordinate@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/js-geo-web-coordinate/-/js-geo-web-coordinate-0.1.1.tgz#63f648a133d420921b0dea5ed0d9e56e51700304"
+  integrity sha512-G74gJB0inurIzSsMVc66XiKqPGge19x1vFlUcGDYnEUx5s3mfirBONuJzyzTZQCoyyf10aAUtuJ6Vw2K0Shf5A==
+  dependencies:
+    bn.js "^5.1.3"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
