@@ -35,17 +35,19 @@ function convertToGeoJson(data) {
   let features = data.landParcels.map((parcel) => {
     let coordinates = parcel.geometry.coordinates.map((c) => {
       return [
-        [c.pointBL.lon, c.pointBL.lat],
-        [c.pointBR.lon, c.pointBR.lat],
-        [c.pointTR.lon, c.pointTR.lat],
-        [c.pointTL.lon, c.pointTL.lat],
+        [
+          [c.pointBL.lon, c.pointBL.lat],
+          [c.pointBR.lon, c.pointBR.lat],
+          [c.pointTR.lon, c.pointTR.lat],
+          [c.pointTL.lon, c.pointTL.lat],
+        ],
       ];
     });
     return {
       type: "Feature",
       geometry: {
         type: "MultiPolygon",
-        coordinates: [coordinates],
+        coordinates: coordinates,
       },
     };
   });
@@ -60,9 +62,9 @@ function Map() {
   const [viewport, setViewport] = useState({
     width: "100vw",
     height: "100vh",
-    latitude: 0,
-    longitude: 0,
-    zoom: 20,
+    latitude: 46.785869,
+    longitude: -121.735288,
+    zoom: 19,
   });
 
   return (
